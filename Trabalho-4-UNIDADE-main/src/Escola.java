@@ -25,10 +25,11 @@ public class Escola{
     //Metódos
     //TODO fazer os métodos de adição e adição darem throws qnd acessar um item q nao existem
     public Aluno adicionarAluno(String nome,String mat, String datNas){
+
+        maiorAluno = alunos.size();
+        
         Aluno aluno = new Aluno(nome,maiorAluno,mat,datNas);
         alunos.put(maiorAluno, aluno);
-        turmas.get(0).adicionarAluno(aluno, this);
-        maiorAluno++;
         return aluno;
     }
 
@@ -45,9 +46,11 @@ public class Escola{
     }
 
     public Docente adicionarDocente(String nome,String mat, String datNas){
+
+        maiorDocente = docentes.size();
+        
         Docente docente = new Docente(nome, maiorDocente,mat,datNas);
         docentes.put(maiorDocente, docente);
-        maiorDocente++;
         return docente;
     }
 
@@ -62,9 +65,11 @@ public class Escola{
     }
 
     public Disciplina adicionarDisciplina(String nome){
+
+        maiorDisciplina = disciplinas.size();
+        
         Disciplina disc =  new Disciplina(nome, maiorDisciplina);
         disciplinas.put(maiorDisciplina, disc);
-        maiorDisciplina++;
         return disc;
     }
 
@@ -83,9 +88,9 @@ public class Escola{
     }
 
     public Turma adicionarTurma(String nome){
-        Turma turma = new Turma(nome,maiorTurma);
+         maiorTurma = turmas.size();   
+      Turma turma = new Turma(nome,maiorTurma);
         turmas.put(maiorTurma, turma);
-        maiorTurma++;
         return turma;
     }
 

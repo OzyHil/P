@@ -115,7 +115,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="200" y="170" width="460" height="60"/>
+              <AbsoluteConstraints x="200" y="170" width="500" height="60"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -1457,29 +1457,50 @@
                 </Constraint>
               </Constraints>
 
-              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
-                <Property name="useNullLayout" type="boolean" value="true"/>
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jLabel24" min="-2" pref="150" max="-2" attributes="0"/>
+                              <Component id="BotaoConcluirCadastroDisciplinas" min="-2" pref="90" max="-2" attributes="0"/>
+                              <Component id="jLabel19" alignment="0" min="-2" pref="140" max="-2" attributes="0"/>
+                              <Component id="CaixaDeTextoDisciplina" alignment="0" min="-2" pref="210" max="-2" attributes="0"/>
+                              <Component id="ListaDeAlunos" alignment="0" min="-2" pref="300" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="270" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                          <Component id="jLabel19" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                          <Component id="CaixaDeTextoDisciplina" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                          <Component id="jLabel24" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                          <Component id="ListaDeAlunos" min="-2" pref="262" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+                          <Component id="BotaoConcluirCadastroDisciplinas" min="-2" pref="30" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
               </Layout>
               <SubComponents>
                 <Component class="javax.swing.JLabel" name="jLabel19">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Segoe UI" size="14" style="0"/>
+                      <Font name="Segoe UI" size="14" style="1"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Nome da Disciplina"/>
                   </Properties>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="29" y="37" width="-1" height="-1"/>
-                    </Constraint>
-                  </Constraints>
                 </Component>
                 <Component class="javax.swing.JTextField" name="CaixaDeTextoDisciplina">
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="29" y="63" width="117" height="-1"/>
-                    </Constraint>
-                  </Constraints>
                 </Component>
                 <Component class="javax.swing.JButton" name="BotaoConcluirCadastroDisciplinas">
                   <Properties>
@@ -1491,21 +1512,11 @@
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BotaoConcluirCadastroDisciplinasActionPerformed"/>
                   </Events>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="30" y="420" width="90" height="30"/>
-                    </Constraint>
-                  </Constraints>
                 </Component>
                 <Container class="javax.swing.JScrollPane" name="ListaDeAlunos">
                   <AuxValues>
                     <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
                   </AuxValues>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="30" y="130" width="224" height="280"/>
-                    </Constraint>
-                  </Constraints>
 
                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                   <SubComponents>
@@ -1524,15 +1535,10 @@
                 <Component class="javax.swing.JLabel" name="jLabel24">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Segoe UI" size="14" style="0"/>
+                      <Font name="Segoe UI" size="14" style="1"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Disciplinas Existentes"/>
                   </Properties>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="29" y="103" width="150" height="-1"/>
-                    </Constraint>
-                  </Constraints>
                 </Component>
               </SubComponents>
             </Container>
@@ -1574,11 +1580,11 @@
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="200" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="234" max="-2" attributes="0"/>
                                   <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace pref="224" max="32767" attributes="0"/>
+                          <EmptySpace pref="260" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -1591,7 +1597,7 @@
                           <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="CaixaDeTextoCadastroNomeAluno" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="CaixaDeTextoCadastroDataNascAluno" min="-2" max="-2" attributes="0"/>
@@ -1689,11 +1695,11 @@
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="200" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="234" max="-2" attributes="0"/>
                                   <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace pref="197" max="32767" attributes="0"/>
+                          <EmptySpace pref="233" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -1706,11 +1712,11 @@
                           <Component id="jLabel30" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="CaixaDeTextoCadastroNomeDocente" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="jLabel33" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="CaixaDeTextoCadastroDataNascDocente" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="jLabel34" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="CaixaDeTextoMatriculaDocente" min="-2" max="-2" attributes="0"/>
@@ -1781,39 +1787,54 @@
                 </Constraint>
               </Constraints>
 
-              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
-                <Property name="useNullLayout" type="boolean" value="true"/>
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jLabel10" min="-2" pref="110" max="-2" attributes="0"/>
+                              <Component id="BotaoConcluirCadastroTurma" min="-2" pref="90" max="-2" attributes="0"/>
+                              <Component id="jLabel12" alignment="0" min="-2" pref="160" max="-2" attributes="0"/>
+                              <Component id="CaixaDeTextoCadastroTurma" alignment="0" min="-2" pref="210" max="-2" attributes="0"/>
+                              <Component id="jScrollPane3" alignment="0" min="-2" pref="300" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="270" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="40" pref="40" max="-2" attributes="0"/>
+                          <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                          <Component id="CaixaDeTextoCadastroTurma" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                          <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                          <Component id="jScrollPane3" min="-2" pref="262" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="BotaoConcluirCadastroTurma" min="-2" pref="30" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
               </Layout>
               <SubComponents>
                 <Component class="javax.swing.JLabel" name="jLabel10">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Segoe UI" size="14" style="0"/>
+                      <Font name="Segoe UI" size="14" style="1"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Nome da Turma"/>
                   </Properties>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="20" y="40" width="110" height="-1"/>
-                    </Constraint>
-                  </Constraints>
                 </Component>
                 <Component class="javax.swing.JTextField" name="CaixaDeTextoCadastroTurma">
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="20" y="70" width="140" height="-1"/>
-                    </Constraint>
-                  </Constraints>
                 </Component>
                 <Container class="javax.swing.JScrollPane" name="jScrollPane3">
                   <AuxValues>
                     <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
                   </AuxValues>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="20" y="160" width="230" height="240"/>
-                    </Constraint>
-                  </Constraints>
 
                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                   <SubComponents>
@@ -1832,15 +1853,10 @@
                 <Component class="javax.swing.JLabel" name="jLabel12">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Segoe UI" size="14" style="0"/>
+                      <Font name="Segoe UI" size="14" style="1"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Turmas Existentes"/>
                   </Properties>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="20" y="130" width="160" height="-1"/>
-                    </Constraint>
-                  </Constraints>
                 </Component>
                 <Component class="javax.swing.JButton" name="BotaoConcluirCadastroTurma">
                   <Properties>
@@ -1849,11 +1865,6 @@
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BotaoConcluirCadastroTurmaActionPerformed"/>
                   </Events>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="90" y="420" width="90" height="-1"/>
-                    </Constraint>
-                  </Constraints>
                 </Component>
               </SubComponents>
             </Container>
@@ -1883,13 +1894,6 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                              <Component id="CaixaDeTextoEditarNomeDisciplina" alignment="0" max="32767" attributes="0"/>
-                                              <Component id="BarraDisciplinasCadastradas" alignment="0" pref="168" max="32767" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
-                                      </Group>
                                       <Group type="102" alignment="1" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Component id="jLabel54" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -1897,25 +1901,40 @@
                                           </Group>
                                           <EmptySpace min="-2" pref="146" max="-2" attributes="0"/>
                                       </Group>
+                                      <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                              <Component id="BarraDisciplinasCadastradas" pref="200" max="32767" attributes="0"/>
+                                              <Component id="CaixaDeTextoEditarNomeDisciplina" max="32767" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="jLabel58" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel57" min="-2" max="-2" attributes="0"/>
+                                      <Component id="BarraDocentesCadastrados1" pref="230" max="32767" attributes="0"/>
+                                      <Component id="BarraAlunosCadastradosDisciplinas" alignment="0" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="TabelaDisc1" min="-2" pref="269" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="BotaoRemoverCoisasDaDisciplina" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="jLabel57" min="-2" max="-2" attributes="0"/>
-                                          <Component id="BarraAlunosCadastradosDisciplinas" pref="177" max="32767" attributes="0"/>
-                                          <Component id="BarraDocentesCadastrados1" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="TabelaDisc4" min="-2" pref="269" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                                          <Component id="BotaoSalvarEditacaoDisciplina" min="-2" pref="80" max="-2" attributes="0"/>
                                       </Group>
-                                      <Component id="jLabel58" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="BotaoRemoverCoisasDaDisciplina" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="BotaoSalvarEditacaoDisciplina" min="-2" pref="80" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="TabelaDisc1" min="-2" pref="269" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="TabelaDisc4" min="-2" pref="269" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace pref="26" max="32767" attributes="0"/>
@@ -1950,12 +1969,12 @@
                               <Component id="TabelaDisc1" min="-2" pref="262" max="-2" attributes="0"/>
                               <Component id="TabelaDisc4" min="-2" pref="262" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="BotaoRemoverCoisasDaDisciplina" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="BotaoSalvarEditacaoDisciplina" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="BotaoSalvarEditacaoDisciplina" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="BotaoRemoverCoisasDaDisciplina" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -2092,10 +2111,12 @@
                           <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="BotaoSalvarEditacaoNotas" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel61" min="-2" max="-2" attributes="0"/>
-                              <Component id="BarraDiciplinasEditarNota" min="-2" pref="168" max="-2" attributes="0"/>
+                              <Component id="jLabel61" alignment="0" min="-2" pref="70" max="-2" attributes="0"/>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="TabelaDisc3" min="-2" pref="233" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                      <Component id="BarraDiciplinasEditarNota" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="TabelaDisc3" alignment="0" pref="233" max="32767" attributes="0"/>
+                                  </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jScrollPane8" min="-2" pref="280" max="-2" attributes="0"/>
                               </Group>
@@ -2155,6 +2176,9 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel61">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Segoe UI" size="12" style="1"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Disciplinas"/>
                   </Properties>
                 </Component>
@@ -2210,52 +2234,59 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="CaixaDeTextoEditarDataNascAluno" min="-2" pref="85" max="-2" attributes="0"/>
-                              <Group type="102" attributes="0">
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="jLabel53" alignment="0" min="-2" pref="54" max="-2" attributes="0"/>
-                                      <Component id="BarraAlunosCadastradosAlunos" alignment="0" pref="163" max="32767" attributes="0"/>
-                                      <Component id="CaixaDeTextoNomeAlunoEditado" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="jLabel60" alignment="0" min="-2" pref="47" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel32" min="-2" max="-2" attributes="0"/>
-                                      <Component id="EditarAlunoMatricula" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" attributes="0">
+                                          <Component id="jLabel32" min="-2" pref="62" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="EditarAlunoMatricula" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="CaixaDeTextoEditarDataNascAluno" min="-2" pref="85" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="jLabel53" alignment="0" min="-2" pref="54" max="-2" attributes="0"/>
+                                          <Component id="BarraAlunosCadastradosAlunos" alignment="0" pref="163" max="32767" attributes="0"/>
+                                          <Component id="CaixaDeTextoNomeAlunoEditado" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="jLabel60" alignment="0" min="-2" pref="47" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="BotaoSalvarEditacaoAluno" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel23" alignment="0" min="-2" pref="57" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <Component id="BotaoSalvarEditacaoAluno" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel23" alignment="0" min="-2" pref="57" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="234" max="-2" attributes="0"/>
+                                  <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
-                          <EmptySpace pref="322" max="32767" attributes="0"/>
+                          <EmptySpace pref="260" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                          <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                           <Component id="jLabel53" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="BarraAlunosCadastradosAlunos" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel60" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel32" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="CaixaDeTextoNomeAlunoEditado" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="EditarAlunoMatricula" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="jLabel60" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="CaixaDeTextoNomeAlunoEditado" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="jLabel23" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="CaixaDeTextoEditarDataNascAluno" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel32" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="EditarAlunoMatricula" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
                           <Component id="BotaoSalvarEditacaoAluno" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="240" max="-2" attributes="0"/>
                       </Group>
@@ -2312,6 +2343,14 @@
                     <Property name="text" type="java.lang.String" value="jLabel40"/>
                   </Properties>
                 </Component>
+                <Component class="javax.swing.JLabel" name="jLabel13">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Segoe UI" size="24" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="ALUNOS"/>
+                  </Properties>
+                </Component>
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="EditarDocente">
@@ -2335,54 +2374,61 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="CaixaDeTextoEditarDataNascDocente" min="-2" pref="85" max="-2" attributes="0"/>
-                              <Component id="BotaoSalvarEditacaoDocente" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel31" alignment="0" min="-2" pref="46" max="-2" attributes="0"/>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="jLabel62" alignment="0" min="-2" pref="54" max="-2" attributes="0"/>
-                                      <Component id="BarraDocentesCadastrados" alignment="0" pref="163" max="32767" attributes="0"/>
-                                      <Component id="CaixaDeTextoNomeDocenteEditado" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="jLabel63" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel35" min="-2" pref="72" max="-2" attributes="0"/>
-                                      <Component id="EditarDocentesMatricula" min="-2" pref="83" max="-2" attributes="0"/>
+                                      <Group type="102" attributes="0">
+                                          <Component id="jLabel35" min="-2" pref="66" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="EditarDocentesMatricula" min="-2" pref="83" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="CaixaDeTextoEditarDataNascDocente" min="-2" pref="85" max="-2" attributes="0"/>
+                                      <Component id="BotaoSalvarEditacaoDocente" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel31" alignment="0" min="-2" pref="46" max="-2" attributes="0"/>
+                                      <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="jLabel62" alignment="0" min="-2" pref="54" max="-2" attributes="0"/>
+                                          <Component id="BarraDocentesCadastrados" alignment="0" pref="163" max="32767" attributes="0"/>
+                                          <Component id="CaixaDeTextoNomeDocenteEditado" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="jLabel63" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
                               </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="234" max="-2" attributes="0"/>
+                                  <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
-                          <EmptySpace pref="294" max="32767" attributes="0"/>
+                          <EmptySpace pref="233" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                          <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                           <Component id="jLabel62" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="BarraDocentesCadastrados" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                          <Component id="jLabel63" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                          <Component id="CaixaDeTextoNomeDocenteEditado" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jLabel31" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="CaixaDeTextoEditarDataNascDocente" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel63" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel35" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="CaixaDeTextoNomeDocenteEditado" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="EditarDocentesMatricula" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                          <Component id="jLabel31" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="CaixaDeTextoEditarDataNascDocente" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
                           <Component id="BotaoSalvarEditacaoDocente" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="168" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="147" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -2440,6 +2486,14 @@
                     <Property name="text" type="java.lang.String" value="jLabel32"/>
                   </Properties>
                 </Component>
+                <Component class="javax.swing.JLabel" name="jLabel15">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Segoe UI" size="24" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="DOCENTES"/>
+                  </Properties>
+                </Component>
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="EditarTurma">
@@ -2463,30 +2517,33 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <Component id="BotaoRemoverAlunoDaTurma" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
-                                  <Component id="BotaoSalvarEditacaoTurma" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Component id="jLabel55" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="BarraTurmasCadastradas" alignment="0" min="-2" pref="108" max="-2" attributes="0"/>
-                              <Component id="jScrollPane1" alignment="0" min="-2" pref="387" max="-2" attributes="0"/>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="CaixaDeTextoNomeTurmaEditado" alignment="0" min="-2" pref="149" max="-2" attributes="0"/>
-                                      <Component id="jLabel66" alignment="0" min="-2" pref="77" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="jScrollPane1" alignment="1" min="-2" pref="432" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel55" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                          <Component id="BarraTurmasCadastradas" alignment="0" pref="200" max="32767" attributes="0"/>
+                                          <Component id="jLabel66" alignment="0" min="-2" pref="77" max="-2" attributes="0"/>
+                                          <Component id="CaixaDeTextoNomeTurmaEditado" alignment="0" pref="200" max="32767" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLabel40" min="-2" pref="58" max="-2" attributes="0"/>
+                                          <Component id="BarraAlunosCadastradosTurmas" min="-2" pref="200" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
-                                  <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel40" min="-2" pref="58" max="-2" attributes="0"/>
-                                      <Component id="BarraAlunosCadastradosTurmas" min="-2" pref="140" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="123" max="-2" attributes="0"/>
+                                      <Component id="BotaoRemoverAlunoDaTurma" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                                      <Component id="BotaoSalvarEditacaoTurma" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
-                          <EmptySpace pref="179" max="32767" attributes="0"/>
+                          <EmptySpace pref="137" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -2621,21 +2678,21 @@
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="BotãoRemoverDisciplinasDoSistema" min="-2" max="-2" attributes="0"/>
-                              <Component id="TabelaDisc2" min="-2" pref="315" max="-2" attributes="0"/>
+                              <Component id="TabelaDisc2" min="-2" pref="300" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="255" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="264" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
                           <Component id="TabelaDisc2" min="-2" pref="269" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                           <Component id="BotãoRemoverDisciplinasDoSistema" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
@@ -2702,7 +2759,7 @@
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace pref="60" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
                           <Component id="jScrollPane6" min="-2" pref="269" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                           <Component id="BotãoRemoverAlunoDoSistema" min="-2" max="-2" attributes="0"/>
@@ -2774,7 +2831,7 @@
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace pref="60" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
                           <Component id="jScrollPane7" min="-2" pref="269" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                           <Component id="BotãoRemoverDocentesDoSistema" min="-2" max="-2" attributes="0"/>
@@ -2846,7 +2903,7 @@
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace pref="60" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
                           <Component id="jScrollPane4" min="-2" pref="269" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                           <Component id="BotãoRemoverTurmaDoSistema" min="-2" max="-2" attributes="0"/>
@@ -2908,25 +2965,25 @@
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
-                                  <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="TabelaDisc" alignment="0" min="-2" pref="256" max="-2" attributes="0"/>
+                                              <Component id="AllRelatorioDisc" alignment="0" min="-2" pref="205" max="-2" attributes="0"/>
                                               <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
                                                   <Component id="BarraDisciplinasRelatorio" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="BarraPrincipalRelatorioDisciplinas" alignment="0" pref="168" max="32767" attributes="0"/>
+                                                  <Component id="BarraPrincipalRelatorioDisciplinas" alignment="0" pref="212" max="32767" attributes="0"/>
                                               </Group>
-                                              <Component id="TabelaDisc" alignment="0" min="-2" pref="256" max="-2" attributes="0"/>
                                           </Group>
-                                          <EmptySpace max="-2" attributes="0"/>
+                                          <EmptySpace max="32767" attributes="0"/>
                                           <Component id="TabelaDoc3" min="-2" pref="260" max="-2" attributes="0"/>
                                       </Group>
-                                      <Component id="jLabel13" alignment="0" min="-2" pref="323" max="-2" attributes="0"/>
                                       <Component id="jLabel52" alignment="0" min="-2" pref="182" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="229" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="225" max="-2" attributes="0"/>
                                   <Component id="BotaoGerarRelatorioDisciplinas" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -2937,7 +2994,7 @@
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                           <Component id="jLabel52" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="BarraPrincipalRelatorioDisciplinas" min="-2" max="-2" attributes="0"/>
@@ -2945,14 +3002,14 @@
                           <Component id="BarraDisciplinasRelatorio" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="TabelaDoc3" pref="0" max="32767" attributes="0"/>
-                              <Component id="TabelaDisc" pref="262" max="32767" attributes="0"/>
+                              <Component id="TabelaDoc3" pref="246" max="32767" attributes="0"/>
+                              <Component id="TabelaDisc" pref="0" max="32767" attributes="0"/>
                           </Group>
-                          <EmptySpace type="unrelated" max="32767" attributes="0"/>
+                          <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
+                          <Component id="AllRelatorioDisc" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="BotaoGerarRelatorioDisciplinas" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -3009,11 +3066,6 @@
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BotaoGerarRelatorioDisciplinasActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel13">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="*O relat&#xf3;rio &#xe9; gerado para todas as disciplinas existentes."/>
-                  </Properties>
-                </Component>
                 <Component class="javax.swing.JComboBox" name="BarraDisciplinasRelatorio">
                   <Properties>
                     <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
@@ -3049,6 +3101,11 @@
                     </Component>
                   </SubComponents>
                 </Container>
+                <Component class="javax.swing.JCheckBox" name="AllRelatorioDisc">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Para todas as disciplinas"/>
+                  </Properties>
+                </Component>
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="RelatorioAluno">
@@ -3074,47 +3131,45 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" attributes="0">
                                           <Component id="jScrollPane2" min="-2" pref="270" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Component id="TabelaDoc2" min="-2" pref="260" max="-2" attributes="0"/>
                                       </Group>
-                                      <Component id="jLabel45" alignment="0" min="-2" pref="307" max="-2" attributes="0"/>
-                                      <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                                          <Component id="jLabel25" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="BarraAlunosRelatorio" alignment="0" pref="144" max="32767" attributes="0"/>
-                                      </Group>
+                                      <Component id="jLabel25" alignment="0" min="-2" pref="144" max="-2" attributes="0"/>
+                                      <Component id="AllRelatorioAluno" alignment="0" min="-2" pref="152" max="-2" attributes="0"/>
+                                      <Component id="BarraAlunosRelatorio" alignment="0" min="-2" pref="220" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="220" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="224" max="-2" attributes="0"/>
                                   <Component id="BotaoGerarRelatorioAlunos" min="-2" pref="130" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                          <EmptySpace pref="30" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                           <Component id="jLabel25" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="BarraAlunosRelatorio" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="TabelaDoc2" min="-2" pref="300" max="-2" attributes="0"/>
-                              <Component id="jScrollPane2" min="-2" pref="300" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="TabelaDoc2" pref="292" max="32767" attributes="0"/>
+                              <Component id="jScrollPane2" pref="0" max="32767" attributes="0"/>
                           </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="AllRelatorioAluno" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="16" max="32767" attributes="0"/>
                           <Component id="BotaoGerarRelatorioAlunos" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jLabel45" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -3186,9 +3241,9 @@
                     <Property name="text" type="java.lang.String" value="Boletim por Aluno"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel45">
+                <Component class="javax.swing.JCheckBox" name="AllRelatorioAluno">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="*O relat&#xf3;rio &#xe9; gerado para todos os alunos existentes."/>
+                    <Property name="text" type="java.lang.String" value="Para todos os alunos"/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -3221,7 +3276,7 @@
                                   <Component id="BotaoGerarRelatorioDocentes" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
                                       <Component id="TabelaDoc" min="-2" pref="249" max="-2" attributes="0"/>
@@ -3230,14 +3285,14 @@
                                   <Component id="jScrollPane9" min="-2" pref="250" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace pref="53" max="32767" attributes="0"/>
+                          <EmptySpace pref="67" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                           <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -3246,7 +3301,7 @@
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="BotaoGerarRelatorioDocentes" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="40" max="32767" attributes="0"/>
+                          <EmptySpace pref="58" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -3334,8 +3389,8 @@
                                           <Component id="BarraTurmasRelatorio" alignment="0" max="32767" attributes="0"/>
                                           <Component id="BarraPrincipalRelatorioTurma" alignment="0" pref="210" max="32767" attributes="0"/>
                                       </Group>
-                                      <Component id="jLabel50" alignment="0" min="-2" pref="406" max="-2" attributes="0"/>
                                       <Component id="jLabel18" alignment="0" min="-2" pref="175" max="-2" attributes="0"/>
+                                      <Component id="AllRelatorioTurma" alignment="0" min="-2" pref="180" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
@@ -3350,7 +3405,7 @@
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace pref="21" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                           <Component id="jLabel18" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="BarraPrincipalRelatorioTurma" min="-2" max="-2" attributes="0"/>
@@ -3358,11 +3413,11 @@
                           <Component id="BarraTurmasRelatorio" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="TabelaDoc1" min="-2" pref="210" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="AllRelatorioTurma" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                           <Component id="BotaoGerarRelatorioTurmas" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="jLabel50" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -3436,9 +3491,9 @@
                     <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                   </AuxValues>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel50">
+                <Component class="javax.swing.JCheckBox" name="AllRelatorioTurma">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="*O relat&#xf3;rio &#xe9; gerado para todas as turmas existentes."/>
+                    <Property name="text" type="java.lang.String" value="Para todas as turmas"/>
                   </Properties>
                 </Component>
               </SubComponents>
