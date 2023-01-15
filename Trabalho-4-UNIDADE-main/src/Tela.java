@@ -2250,7 +2250,116 @@ public class Tela extends javax.swing.JFrame {
                     .addComponent(TelaDocente, javax.swing.GroupLayout.PREFERRED_SIZE, 600, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
+BarraTurmasCadastradas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                if (isToListen){
+                RefreshEditarTurmas();
+            }
+        }
+        });
 
+        BarraDisciplinasCadastradas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                if (isToListen){
+                    RefreshEditarDisciplina();
+                }
+        }
+        });
+        BarraDiciplinasEditarNota.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                if (isToListen){
+                    bufferForRemoval.clear();
+                    String[] buffer = new String[1];
+                    DefaultTableModel toAdd = new DefaultTableModel();
+                    DefaultTableModel toAddBravo = new DefaultTableModel();
+                    toAdd.addColumn("1ª U");
+                    toAdd.addColumn("2ª U");
+                    toAdd.addColumn("3ª U");
+                    toAdd.addColumn("4ª U");
+                    toAddBravo.addColumn("Alunos");
+                    String str = (String)BarraDiciplinasEditarNota.getSelectedItem();
+                    for(Aluno a: escola.disciplinas.get(Integer.parseInt(String.valueOf(str.charAt(0)))).getNotas().keySet()){
+                        buffer = new String[1];
+                        buffer[0] = String.valueOf(a.getCodigo());
+                        buffer[0] = buffer[0] + " - " + a.getNome();
+                        toAddBravo.addRow(buffer);
+                        Float[] teste = escola.disciplinas.get(Integer.parseInt(String.valueOf(str.charAt(0)))).getNotas().get(a);
+                        toAdd.addRow(teste);    
+                    }
+
+                    bufferForRemoval.clear();
+                    TabelaAlunosEditarNotas.setModel(toAddBravo);
+                    TebelaParaEditarNotas.setModel(toAdd);
+                }
+        }
+    });
+    BarraAlunosCadastradosDisciplinas.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+            BarraAlunosTelaEditarDisciplinasActionPerformed();
+    }
+    });
+
+    //aq
+
+    BarraDocentesCadastrados1.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+           BarraDocentesTelaEditarDiscplinasActionPerformed();
+    }
+    });
+
+    BotaoSalvarEditacaoAluno.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+           BotaoSalvarEditacaoAlunoActionPerformed(evt);
+    }
+    });
+
+    BotaoRemoverCoisasDaDisciplina.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+           BotaoRemoverCoisasDaDisciplinaActionPerformed(evt);
+    }
+    });
+
+    BarraAlunosCadastradosTurmas.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+           BarraAlunosCadastradosTurmasActionPerformed();
+    }
+    });
+
+    BotãoRemoverDisciplinasDoSistema.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+           BotãoRemoverDisciplinasDoSistemaActionPerformed(evt);
+    }
+    });
+
+    ListaDiciplinasCadastrarDisciplinas.setModel(listDisciplinas);
+    ListaTurmasCadastrarTurma.setModel(listTurmas);
+
+    BarraAlunosCadastradosAlunos.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+           BarraAlunosCadastradosAlunosActionPerformed();
+    }
+    });
+
+    BarraDocentesCadastrados.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+           BarraDocentesCadastradosActionPerformed();
+    }
+    });
+
+    BotaoGerarRelatorioAlunos.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+           BotaoGerarRelatorioAlunosActionPerfomed();
+    }
+    });
+
+    BotaoGerarRelatorioDocentes.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+           BotaoGerarRelatorioDocentesActionPerformed();
+    }
+    });
+        
+InicializarBarras();
+    //Fim do init
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
